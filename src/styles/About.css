@@ -1,0 +1,6 @@
+#page > #content-container > img#profile-picture {
+  float: right;
+  width: 250px;
+  height: auto;
+  border: 8px solid whitesmoke;
+}

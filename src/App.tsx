@@ -1,19 +1,27 @@
 import React from "react";
-import Avatar from "./components/Avatar";
-import "./App.css";
+import { AnimatePresence } from "framer-motion";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./styles/App.css";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Experience from "./pages/Experience";
 
-function App() {
+export default () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Avatar />
-        <p>
-          Hi, my name is <strong>Seng Chiat (SC) Haw</strong>
-        </p>
-        <p>I am a Full-Stack Developer.</p>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Route
+          render={({ location }) => (
+            <AnimatePresence exitBeforeEnter initial={false}>
+              <Switch location={location} key={location.pathname}>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/experience" component={Experience} />
+              </Switch>
+            </AnimatePresence>
+          )}
+        />
+      </div>
+    </Router>
   );
-}
-
-export default App;
+};

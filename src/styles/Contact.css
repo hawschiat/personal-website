@@ -1,0 +1,16 @@
+#home #center > #center-bottom > a.social-btns {
+  display: inline-block;
+  border: none;
+  font-size: 3em;
+  background: transparent;
+  transition: scale 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #282c34;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+#home #center > #center-bottom > a.social-btns:hover {
+  scale: 1.2;
+}
+#home #center > #center-bottom > a.social-btns:active {
+  scale: 0.9;
+}

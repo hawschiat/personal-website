@@ -1,0 +1,112 @@
+#page > #content-container {
+  width: 90%;
+}
+
+.experience {
+  margin-bottom: 3em;
+}
+
+.experience > .category-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  width: 100%;
+  border-bottom: 1px solid #282c34;
+}
+
+.experience > .category-content > ul {
+  list-style: none;
+  padding: 0;
+}
+.experience > .category-content > ul > li {
+  padding: 1em 1.5em 1em 1.5em;
+  border-radius: 2em;
+  background: rgba(173, 173, 173, 0.2);
+}
+
+.experience > .category-content > ul > li > div.category-item > header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1.8em;
+}
+.experience > .category-content > ul > li > div.category-item > header > .left {
+  display: flex;
+  flex-direction: column;
+}
+.experience
+  > .category-content
+  > ul
+  > li
+  > div.category-item
+  > header
+  > .left
+  > .title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+.experience
+  > .category-content
+  > ul
+  > li
+  > div.category-item
+  > header
+  > .left
+  > .details {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+.experience
+  > .category-content
+  > ul
+  > li
+  > div.category-item
+  > header
+  > .right
+  > .period {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.experience > .category-content > ul > li > div.category-item ul {
+  padding-left: 1em;
+}
+.experience > .category-content > ul > li > div.category-item ul li {
+  line-height: 1.3em;
+  margin-bottom: 0.8em;
+}
+
+@media only screen and (min-width: 1200px) {
+  #page > #content-container {
+    width: 60%;
+  }
+
+  .experience > .category-content > ul > li {
+    padding: 1.5em 2em 1.5em 2em;
+  }
+  .experience > .category-content > ul > li > div.category-item > header {
+    flex-direction: row;
+  }
+  .experience
+    > .category-content
+    > ul
+    > li
+    > div.category-item
+    > header
+    > .left
+    > .details {
+    margin-bottom: unset;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .experience > .category-title {
+    border-bottom: 3px solid whitesmoke;
+  }
+
+  .experience > .category-content > ul > li {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}

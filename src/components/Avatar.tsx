@@ -1,4 +1,19 @@
 import React from "react";
+import { motion, Variants } from "framer-motion";
+
+const AvatarVariants: Variants = {
+  initial: { y: "-50%", opacity: 0 },
+  enter: {
+    y: "0%",
+    opacity: 1,
+    transition: { ease: "backOut", duration: 0.8 },
+  },
+  exit: {
+    scale: 0.7,
+    opacity: 0,
+    transition: { ease: "backIn", delay: 0.3, duration: 0.8 },
+  },
+};
 
 /**
  * Animated SVG-based avatar, created using https://getavataaars.com/
@@ -18,11 +33,10 @@ export default class Avatar extends React.Component {
   eyeBound?: DOMRect;
 
   componentDidMount() {
-    this.eyeBound = document
-      .getElementById("Eyes/Default")
-      ?.getBoundingClientRect();
+    this.updateEyeBound();
     document.addEventListener("mousemove", this.eyeTrackCursor);
     document.addEventListener("mouseout", this.resetOffset);
+    window.addEventListener("resize", this.updateEyeBound);
 
     this.blinkEye();
   }
@@ -33,6 +47,16 @@ export default class Avatar extends React.Component {
     }
     document.removeEventListener("mousemove", this.eyeTrackCursor);
     document.removeEventListener("mouseout", this.resetOffset);
+    window.removeEventListener("resize", this.updateEyeBound);
+  }
+
+  updateEyeBound() {
+    const eyeElement = document.getElementById("Eyes/Default");
+    if (eyeElement) {
+      this.eyeBound = eyeElement.getBoundingClientRect();
+    } else {
+      setInterval(this.updateEyeBound, 300);
+    }
   }
 
   eyeTrackCursor = (ev: MouseEvent) => {
@@ -171,7 +195,8 @@ export default class Avatar extends React.Component {
 
   render() {
     return (
-      <svg
+      <motion.svg
+        variants={AvatarVariants}
         id="avatar"
         width="264px"
         height="280px"
@@ -380,9 +405,9 @@ export default class Avatar extends React.Component {
                         xlinkHref="#react-path-102"
                       ></use>
                       <g
-                        id="Skin/👶🏽-03-Brown"
+                        id="Hair/Color"
                         mask="url(#react-mask-100)"
-                        fill="#2C1B18"
+                        fill="#000000"
                       >
                         <g
                           transform="translate(0.000000, 0.000000) "
@@ -454,7 +479,7 @@ export default class Avatar extends React.Component {
             </g>
           </g>
         </g>
-      </svg>
+      </motion.svg>
     );
   }
 }
