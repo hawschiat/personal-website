@@ -5,6 +5,7 @@ import AnimatedLink from "../components/AnimatedLink";
 import ExperienceCategory from "../components/ExperienceCategory";
 import ExperienceContent from "../components/ExperienceContent";
 import "../styles/Experience.css";
+import Ability from "../components/Ability";
 
 export default () => {
   return (
@@ -47,7 +48,7 @@ export default () => {
         animate="enter"
         exit="exit"
         variants={{
-          enter: { transition: { delayChildren: 0.5 } },
+          enter: { transition: { delayChildren: 0.7 } },
         }}
       >
         <motion.div id="content-title" variants={SlideVariants}>
@@ -55,7 +56,7 @@ export default () => {
         </motion.div>
         <ExperienceCategory
           name="Work"
-          delayChildren={{ enter: 0.7, exit: 0.2 }}
+          delayChildren={{ enter: 0.7, exit: 0.4 }}
         >
           <ExperienceContent
             title="Co-Founder and Lead Developer"
@@ -114,8 +115,40 @@ export default () => {
         </ExperienceCategory>
         <ExperienceCategory
           name="Abilities"
-          delayChildren={{ enter: 0.7, exit: 0.2 }}
-        ></ExperienceCategory>
+          abilities
+          delayChildren={{ enter: 0.9, exit: 0.2 }}
+        >
+          <span className="subtitle">Programming Languages</span>
+          <Ability name="JavaScript" rated={4.5} outOf={5} />
+          <Ability name="Python" rated={4.5} outOf={5} />
+          <Ability name="TypeScript" rated={4} outOf={5} />
+          <Ability name="Kotlin" rated={4} outOf={5} />
+          <Ability name="Java" rated={4} outOf={5} />
+          <Ability name="PHP" rated={3.5} outOf={5} />
+          <Ability name="C#" rated={3} outOf={5} />
+          <Ability name="Clojure" rated={3} outOf={5} />
+          <span className="subtitle">
+            Web Development{" "}
+            <span style={{ fontSize: "0.7em", marginLeft: "0.5em" }}>
+              (incl. JavaScript & TypeScript)
+            </span>
+          </span>
+          <Ability name="HTML" rated={5} outOf={5} />
+          <Ability name="CSS" rated={5} outOf={5} />
+          <Ability name="SCSS" rated={5} outOf={5} />
+          <Ability name="Vue.js" rated={4} outOf={5} />
+          <Ability name="React" rated={3.5} outOf={5} />
+          <span className="subtitle">Database Systems</span>
+          <Ability name="DynamoDB" rated={4.5} outOf={5} />
+          <Ability name="MySQL" rated={4} outOf={5} />
+          <Ability name="PostgreSQL" rated={3} outOf={5} />
+          <span className="subtitle">App Development</span>
+          <Ability name="Flutter" rated={3} outOf={5} />
+          <span className="subtitle">Development Tools</span>
+          <Ability name="Git" rated={4} outOf={5} />
+          <Ability name="Docker" rated={3.5} outOf={5} />
+          <Ability name="Selenium WebDriver" rated={2.5} outOf={5} />
+        </ExperienceCategory>
       </motion.div>
     </div>
   );

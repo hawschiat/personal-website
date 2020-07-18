@@ -32,6 +32,9 @@ body {
   top: 1em;
   right: 1em;
 }
+#page #continue-btn-container div.animated-link::after {
+  transform-origin: right;
+}
 
 #page > #content-container {
   margin-bottom: 1em;

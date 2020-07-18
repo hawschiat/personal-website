@@ -1,0 +1,16 @@
+.ability {
+  margin: 1em 0 1em 0;
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 50%;
+}
+
+.ability > .name {
+  margin-right: 1em;
+}
+
+@media only screen and (min-width: 1300px) {
+  .ability {
+    flex: 1 0 25%;
+  }
+}

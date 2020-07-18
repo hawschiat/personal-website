@@ -1,8 +1,11 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
+import { AbilityProp } from "./Ability";
+import "../styles/ExperienceCategory.css";
 
 type ExperienceCategoryProps = {
   name: string;
+  abilities?: Boolean;
   delayChildren?: { enter: number; exit: number };
   children?: React.ReactNode;
 };
@@ -62,7 +65,9 @@ export default (props: ExperienceCategoryProps) => {
         {props.name}
       </motion.div>
       <motion.div className="category-content" variants={SlideVariants}>
-        {props.children && props.children instanceof Array ? (
+        {props.abilities ? (
+          <div className="abilities">{props.children}</div>
+        ) : props.children && props.children instanceof Array ? (
           <ul>
             {props.children.map((node) => (
               <li>{node}</li>
