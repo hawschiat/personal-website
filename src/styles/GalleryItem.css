@@ -93,10 +93,10 @@
   left: 0;
   z-index: 1;
   width: 100vw;
-  height: 100vh;
   padding: 0;
 }
 .gallery-item-container.active > .gallery-item {
+  min-height: 100vh;
   border-radius: 0;
   cursor: unset;
 }
