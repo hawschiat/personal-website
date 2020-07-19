@@ -1,6 +1,8 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import { FadeVariants } from "../PageAnimations";
+import AnimatedLink from "../components/AnimatedLink";
+import "../styles/Contact.css";
 
 const SlideVariants: Variants = {
   initial: { x: "100%", opacity: 0 },
@@ -23,8 +25,8 @@ export default () => {
             iconClass: "fas fa-arrow-left",
             placement: "front",
           }}
-          content="Home"
-          to="/"
+          content="Projects"
+          to="/projects"
         />
       </motion.div>
       <motion.div
@@ -39,8 +41,8 @@ export default () => {
             iconClass: "fas fa-arrow-right",
             placement: "end",
           }}
-          content="Experience"
-          to="/experience"
+          content="Home"
+          to="/"
         />
       </motion.div>
       <motion.div
@@ -50,9 +52,12 @@ export default () => {
         exit="exit"
         variants={{
           enter: { transition: { delayChildren: 0.5, staggerChildren: 0.1 } },
-          exit: { transition: { staggerChildren: 0.2 } },
+          exit: { transition: { staggerChildren: 0.1 } },
         }}
       >
+        <motion.div id="content-title" variants={FadeVariants}>
+          Contact Me
+        </motion.div>
         <motion.a
           href="mailto:hawschiat@gmail.com"
           className="social-btns"
