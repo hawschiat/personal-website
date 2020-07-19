@@ -10,6 +10,21 @@ const SlideVariants: Variants = {
   exit: { x: "100%", opacity: 0, transition: { ease: "backIn" } },
 };
 
+const contacts = [
+  {
+    link: "mailto:hawschiat@gmail.com",
+    icon: "fas fa-envelope",
+  },
+  {
+    link: "https://www.linkedin.com/in/haw-seng-chiat/",
+    icon: "fab fa-linkedin",
+  },
+  {
+    link: "https://github.com/hawschiat",
+    icon: "fab fa-github-square",
+  },
+];
+
 export default () => {
   return (
     <div id="page">
@@ -47,6 +62,7 @@ export default () => {
       </motion.div>
       <motion.div
         id="content-container"
+        className="contact-container"
         initial="initial"
         animate="enter"
         exit="exit"
@@ -58,27 +74,17 @@ export default () => {
         <motion.div id="content-title" variants={FadeVariants}>
           Contact Me
         </motion.div>
-        <motion.a
-          href="mailto:hawschiat@gmail.com"
-          className="social-btns"
-          variants={SlideVariants}
-        >
-          <i className="fas fa-envelope"></i>
-        </motion.a>
-        <motion.a
-          href="https://www.linkedin.com/in/haw-seng-chiat/"
-          className="social-btns"
-          variants={SlideVariants}
-        >
-          <i className="fab fa-linkedin"></i>
-        </motion.a>
-        <motion.a
-          href="https://github.com/hawschiat"
-          className="social-btns"
-          variants={SlideVariants}
-        >
-          <i className="fab fa-github-square"></i>
-        </motion.a>
+        {contacts.map((contact) => (
+          <motion.a
+            href={contact.link}
+            className="social-btns"
+            variants={SlideVariants}
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <i className={contact.icon}></i>
+          </motion.a>
+        ))}
       </motion.div>
     </div>
   );

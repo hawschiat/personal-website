@@ -49,7 +49,10 @@ export default () => {
           </motion.h3>
         </motion.div>
         <div id="center-bottom">
-          <a href="#" className="App-link">
+          <a
+            href="https://github.com/hawschiat/personal-website"
+            className="App-link"
+          >
             Like this website? Check out my Github repo!
           </a>
         </div>

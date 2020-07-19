@@ -44,7 +44,11 @@ export default (props: AnimatedlinkProps) => {
 
   return (
     <Link className="animated-link-container" to={props.to ? props.to : ""}>
-      <motion.div className={getClassName(props)} variants={LinkVariants}>
+      <motion.div
+        className={getClassName(props)}
+        variants={LinkVariants}
+        whileTap={{ scale: 0.9 }}
+      >
         {fontAwesomeIcon && fontAwesomeIcon.placement === "front" ? (
           <i className={fontAwesomeIcon.iconClass}></i>
         ) : null}

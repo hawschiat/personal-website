@@ -2,8 +2,8 @@ import React from "react";
 import { motion, Variants } from "framer-motion";
 import { FadeVariants, SlideVariants } from "../PageAnimations";
 import AnimatedLink from "../components/AnimatedLink";
-import "../styles/About.css";
 import ProfilePic from "../assets/mypic.jpg";
+import "../styles/About.css";
 
 const PictureVariants: Variants = {
   initial: { x: "30%", rotate: 2, opacity: 0 },

@@ -12,7 +12,6 @@ div.animated-link {
   width: 100%;
   padding: 1em;
   margin-bottom: 1em;
-  transition: scale 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
 }
 div.animated-link::after {
@@ -31,10 +30,7 @@ div.animated-link::after {
     border-radius 0.1s ease-out;
 }
 div.animated-link:hover::after {
-  transform: scaleX(100%);
-}
-div.animated-link:active {
-  scale: 0.9;
+  transform: scaleX(1);
 }
 div.animated-link > span,
 div.animated-link > i {
