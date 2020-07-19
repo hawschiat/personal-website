@@ -28,7 +28,7 @@ export default () => {
         variants={LinkParentVariants}
       >
         <AnimatedLink large content="About Me" to="/about" />
-        <AnimatedLink large content="Projects" />
+        <AnimatedLink large content="Projects" to="/projects" />
       </motion.div>
       <div id="center">
         <motion.div

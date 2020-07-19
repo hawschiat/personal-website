@@ -1,0 +1,16 @@
+#project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  width: 100%;
+}
+
+#project-gallery > div.gallery-item-container:not(.active) {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1200px) {
+  #project-gallery > div.gallery-item-container:not(.active) {
+    width: 33.33%;
+  }
+}

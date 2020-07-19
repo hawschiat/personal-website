@@ -1,0 +1,133 @@
+.gallery-item-container {
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.gallery-item-container > .gallery-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #282c34;
+  color: whitesmoke;
+  border-radius: 0.5em;
+  overflow: hidden;
+  cursor: pointer;
+  transition: scale 0.3s ease-out;
+  z-index: 0;
+}
+.gallery-item-container > .gallery-item > .close-btn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 2em;
+  cursor: pointer;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
+}
+.gallery-item-container > .gallery-item > .gallery-img-container {
+  width: 100%;
+  height: 10em;
+  overflow: hidden;
+}
+.gallery-item-container > .gallery-item > .gallery-img-container > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: scale 0.3s ease-out;
+}
+.gallery-item-container > .gallery-item > .gallery-item-title {
+  font-size: 1.3em;
+  font-weight: 600;
+  padding: 1em;
+}
+.gallery-item-container > .gallery-item > .gallery-item-title > a {
+  display: none;
+  font-size: 0.5em;
+  margin-left: 1em;
+}
+.gallery-item-container > .gallery-item > .gallery-item-description {
+  display: none;
+  padding: 0 2em 0 2em;
+  box-sizing: border-box;
+}
+.gallery-item-container > .gallery-item > .gallery-item-description > p {
+  display: inline-block;
+  margin-bottom: 0;
+  width: 100%;
+  font-size: 1.1em;
+}
+.gallery-item-container
+  > .gallery-item
+  > .gallery-item-description
+  > p:last-child {
+  margin-bottom: initial;
+}
+
+/* Hover actions */
+.gallery-item-container:not(.active) > .gallery-item:hover {
+  scale: 0.95;
+}
+.gallery-item-container:not(.active)
+  > .gallery-item:hover
+  > .gallery-img-container
+  > img {
+  scale: 1.1;
+}
+.gallery-item-container:not(.active) > .gallery-item:active {
+  scale: 0.8;
+}
+.gallery-item-container:not(.active)
+  > .gallery-item:active
+  > .gallery-img-container
+  > img {
+  scale: 1.2;
+}
+
+/* Active card */
+.gallery-item-container.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+}
+.gallery-item-container.active > .gallery-item {
+  border-radius: 0;
+  cursor: unset;
+}
+.gallery-item-container.active > .gallery-item > .close-btn {
+  display: initial;
+  opacity: 1;
+}
+.gallery-item-container.active > .gallery-item > .gallery-img-container {
+  height: 40vh;
+}
+.gallery-item-container.active > .gallery-item > .gallery-item-title {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 1em 1em 0.3em 1em;
+}
+.gallery-item-container.active > .gallery-item > .gallery-item-title > a {
+  display: initial;
+}
+.gallery-item-container.active > .gallery-item > .gallery-item-description {
+  display: block;
+}
+
+@media only screen and (min-width: 1200px) {
+  .gallery-item-container {
+    padding: 2em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .gallery-item-container > .gallery-item {
+    background-color: whitesmoke;
+    color: #282c34;
+  }
+}

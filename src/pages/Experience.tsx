@@ -39,7 +39,7 @@ export default () => {
             placement: "end",
           }}
           content="Projects"
-          to="/"
+          to="/projects"
         />
       </motion.div>
       <motion.div

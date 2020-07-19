@@ -1,6 +1,5 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
-import { AbilityProp } from "./Ability";
 import "../styles/ExperienceCategory.css";
 
 type ExperienceCategoryProps = {

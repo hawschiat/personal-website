@@ -1,0 +1,42 @@
+- title: SAQ Inventory Scrapper
+  imagePath: "/images/projects/saqs-screenshot.png"
+  link: "https://github.com/hawschiat/saq-inventory-scraper"
+  description: >-
+    My friend [Mike](https://www.linkedin.com/in/michael-di-genova-732b3913b/) approached me in July 2018 asking me if there's an easy way to scrape inventory data across all branches on [SAQ's website](https://www.saq.com/en/). Since SAQ doesn't provide any public API for us to query data from, I decided to write a scraper to pull data from the website directly.
+
+
+    Initially, only a portion of data is loaded. Subsequent data can only be fetched after clicking a specific button. Using Selenium ChromeDriver, I managed to automate that process and fetch the data that he needs!
+
+
+    This project was written using Kotlin. It also provides a command-line user interface to input parameters such as the web URL to fetch the data from.
+
+
+    P.S. If you are looking for exotic vodka, [Prose Vodka](https://www.prosevodka.com/) is the first pink vodka in the world! ;)
+
+- title: FlashPoint
+  imagePath: "/images/projects/flashpoint_banner.jpg"
+  link: "https://github.com/COMP361/f2018-group10"
+  description: >-
+    A medium-sized game development project that involves 5 people. We used [PyGame](https://pygame.org) and several other Python libraries to develop a video game based on FlashPoint, a board game. The video game is co-op and turn based, and the clients communicate with each other using peer-to-peer architecture.
+
+
+    Some of the things I did include:
+
+    - Built customizable UI components from the basic shapes provided by the library
+
+    - Worked on the networking component of the game
+
+- title: Bull & Bear Media Fund Package
+  imagePath: "/images/projects/b&b_media_fund.png"
+  link: "http://bullandbearmcgill.com/media-fund-2018/index.html"
+  description: >-
+    A tiny project I had when I was the Managing Web Editor of [The Bull & Bear](http://bullandbearmcgill.com) to raise funds for the organization. It was designed using jQuery, [AOS](https://michalsnik.github.io/aos/) and [Rellax](https://github.com/dixonandmoe/rellax) library.
+
+- title: AnimaCard Builder
+  imagePath: "/images/projects/animacard_builder.jpg"
+  link: ""
+  description: >-
+    This was the project I did with my friend [Francis](https://github.com/francis-piche) during McHacks 2018. It was my first time experimenting with HTML canvas and interactive JavaScript. Despite being beginners, we managed to complete several features such as drag-and-drop and animated sprites.
+
+
+    This project got me really interested in Javascript and pushed me to self-learn it on my own!

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
+import { FadeVariants } from "../PageAnimations";
 
 const SlideVariants: Variants = {
   initial: { x: "100%", opacity: 0 },
@@ -9,16 +10,47 @@ const SlideVariants: Variants = {
 
 export default () => {
   return (
-    <div id="contact">
+    <div id="page">
       <motion.div
+        id="back-btn-container"
+        initial="initial"
+        animate="enter"
+        exit="exit"
+        variants={FadeVariants}
+      >
+        <AnimatedLink
+          fontAwesomeIcon={{
+            iconClass: "fas fa-arrow-left",
+            placement: "front",
+          }}
+          content="Home"
+          to="/"
+        />
+      </motion.div>
+      <motion.div
+        id="continue-btn-container"
+        initial="initial"
+        animate="enter"
+        exit="exit"
+        variants={FadeVariants}
+      >
+        <AnimatedLink
+          fontAwesomeIcon={{
+            iconClass: "fas fa-arrow-right",
+            placement: "end",
+          }}
+          content="Experience"
+          to="/experience"
+        />
+      </motion.div>
+      <motion.div
+        id="content-container"
         initial="initial"
         animate="enter"
         exit="exit"
         variants={{
-          enter: {
-            transition: { mdelayChildren: 0.5, staggerChildren: 0.1 },
-          },
-          exit: { transition: { delayChildren: 1.3, staggerChildren: 0.1 } },
+          enter: { transition: { delayChildren: 0.5, staggerChildren: 0.1 } },
+          exit: { transition: { staggerChildren: 0.2 } },
         }}
       >
         <motion.a
