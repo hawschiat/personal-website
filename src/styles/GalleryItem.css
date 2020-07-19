@@ -113,10 +113,14 @@
   padding: 1em 1em 0.3em 1em;
 }
 .gallery-item-container.active > .gallery-item > .gallery-item-title > a {
+  color: #61dafb;
   display: initial;
 }
 .gallery-item-container.active > .gallery-item > .gallery-item-description {
   display: block;
+}
+.gallery-item-container.active > .gallery-item > .gallery-item-description a {
+  color: #61dafb;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -129,5 +133,23 @@
   .gallery-item-container > .gallery-item {
     background-color: whitesmoke;
     color: #282c34;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html,
+    body {
+      background: #282c34;
+      color: whitesmoke;
+    }
+
+    .gallery-item-container.active > .gallery-item > .gallery-item-title > a {
+      color: #2648b8;
+    }
+    .gallery-item-container.active
+      > .gallery-item
+      > .gallery-item-description
+      a {
+      color: #2648b8;
+    }
   }
 }
