@@ -17,21 +17,31 @@
   padding: 0;
 }
 .experience > .category-content > ul > li {
-  padding: 1em 1.5em 1em 1.5em;
   border-radius: 2em;
   background: rgba(173, 173, 173, 0.2);
 }
 
+.experience > .category-content > ul > li > div.category-item {
+  padding: 1em 1.5em 1em 1.5em;
+}
+
 .experience > .category-content > ul > li > div.category-item > header {
   display: flex;
-  flex-direction: column;
   width: 100%;
-  justify-content: space-between;
   margin-bottom: 1.8em;
+}
+.experience
+  > .category-content
+  > ul
+  > li
+  > div.category-item
+  > header:last-child {
+  margin-bottom: unset;
 }
 .experience > .category-content > ul > li > div.category-item > header > .left {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 .experience
   > .category-content
@@ -62,11 +72,10 @@
   > li
   > div.category-item
   > header
-  > .right
-  > .period {
-  height: 100%;
+  > .right {
   display: flex;
   align-items: flex-end;
+  flex-shrink: 1;
 }
 
 .experience > .category-content > ul > li > div.category-item ul {
@@ -75,6 +84,56 @@
 .experience > .category-content > ul > li > div.category-item ul li {
   line-height: 1.3em;
   margin-bottom: 0.8em;
+}
+
+/* Achievements */
+.experience
+  > .category-content
+  > ul
+  > li
+  > div.category-item.achievement
+  > header {
+  flex-wrap: wrap;
+}
+.experience
+  > .category-content
+  > ul
+  > li
+  > div.category-item.achievement
+  > header
+  > .badge-container {
+  margin: 0 auto;
+  padding: 1em;
+}
+.experience
+  > .category-content
+  > ul
+  > li
+  > div.category-item.achievement
+  > header
+  > .badge-container
+  > img {
+  height: 10em;
+  width: auto;
+}
+.experience
+  > .category-content
+  > ul
+  > li
+  > div.category-item.achievement
+  > header
+  > .left {
+  justify-content: center;
+}
+.experience
+  > .category-content
+  > ul
+  > li
+  > div.category-item.achievement
+  > header
+  > .left
+  > .period {
+  margin: 1em 0 1em 0;
 }
 
 /* Abilities */
@@ -90,8 +149,11 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .experience > .category-content > ul > li {
+  .experience > .category-content > ul > li > div.category-item {
     padding: 1.5em 2em 1.5em 2em;
+  }
+  .experience > .category-content > ul > li > div.category-item.achievement {
+    padding: 0 1em 0;
   }
   .experience > .category-content > ul > li > div.category-item > header {
     flex-direction: row;

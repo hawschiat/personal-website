@@ -6,6 +6,7 @@ import ExperienceCategory from "../components/ExperienceCategory";
 import ExperienceContent from "../components/ExperienceContent";
 import "../styles/Experience.css";
 import Ability from "../components/Ability";
+import AchievementContent from "../components/AchievementContent";
 
 export default () => {
   return (
@@ -56,7 +57,7 @@ export default () => {
         </motion.div>
         <ExperienceCategory
           name="Work"
-          delayChildren={{ enter: 0.7, exit: 0.4 }}
+          delayChildren={{ enter: 0.7, exit: 0.6 }}
         >
           <ExperienceContent
             title="Co-Founder and Lead Developer"
@@ -114,9 +115,21 @@ export default () => {
           </ExperienceContent>
         </ExperienceCategory>
         <ExperienceCategory
+          name="Achievements"
+          delayChildren={{ enter: 0.9, exit: 0.4 }}
+        >
+          <AchievementContent
+            title="AWS Certified Developer - Associate"
+            period="May 2020 - May 2023"
+            organization="Amazon Web Services (AWS)"
+            imagePath="/images/badges/aws-certified-developer-associate.png"
+            link="https://www.youracclaim.com/badges/5ecfedf0-e9fb-4b80-af63-873bf14e8514/public_url"
+          />
+        </ExperienceCategory>
+        <ExperienceCategory
           name="Abilities"
           abilities
-          delayChildren={{ enter: 0.9, exit: 0.2 }}
+          delayChildren={{ enter: 1.1, exit: 0.2 }}
         >
           <span className="subtitle">Programming Languages</span>
           <Ability name="JavaScript" rated={4.5} outOf={5} />

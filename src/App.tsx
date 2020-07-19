@@ -1,12 +1,12 @@
 import React from "react";
 import { AnimatePresence } from "framer-motion";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import "./styles/App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import "./styles/App.css";
 
 export default () => {
   return (
