@@ -18,7 +18,7 @@
   margin-bottom: 2em;
 }
 
-#page > #content-container > a.social-btns {
+#page > #content-container > div.social-btns > a {
   display: inline-block;
   border: none;
   font-size: 3em;
@@ -28,7 +28,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  #page > #content-container > a.social-btns {
+  #page > #content-container > div.social-btns > a {
     color: whitesmoke;
   }
 }

@@ -21,9 +21,11 @@ export default class ProjectPage extends React.Component {
 
   chooseProject = (index: number) => {
     if (index >= 0) {
-      ReactGA.pageview(`/projects/${index + 1}`);
-    } else {
-      ReactGA.pageview(`/projects`);
+      ReactGA.event({
+        category: "Project",
+        action: "Viewed Project",
+        value: index + 1,
+      });
     }
     this.setState({
       chosen: index,

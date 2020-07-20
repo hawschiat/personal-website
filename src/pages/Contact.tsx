@@ -1,5 +1,5 @@
 import React from "react";
-import ReactGA from "react-ga";
+import ReactGA, { OutboundLink } from "react-ga";
 import { motion, Variants } from "framer-motion";
 import { FadeVariants } from "../PageAnimations";
 import AnimatedLink from "../components/AnimatedLink";
@@ -13,14 +13,17 @@ const SlideVariants: Variants = {
 
 const contacts = [
   {
+    label: "Email Contact",
     link: "mailto:hawschiat@gmail.com",
     icon: "fas fa-envelope",
   },
   {
+    label: "LinkedIn Contact",
     link: "https://www.linkedin.com/in/haw-seng-chiat/",
     icon: "fab fa-linkedin",
   },
   {
+    label: "GitHub Contact",
     link: "https://github.com/hawschiat",
     icon: "fab fa-github-square",
   },
@@ -78,15 +81,16 @@ export default () => {
           Contact Me
         </motion.div>
         {contacts.map((contact) => (
-          <motion.a
-            href={contact.link}
+          <motion.div
             className="social-btns"
             variants={SlideVariants}
             whileHover={{ scale: 1.3 }}
             whileTap={{ scale: 0.9 }}
           >
-            <i className={contact.icon}></i>
-          </motion.a>
+            <OutboundLink eventLabel={contact.label} to={contact.link}>
+              <i className={contact.icon}></i>
+            </OutboundLink>
+          </motion.div>
         ))}
       </motion.div>
     </div>
