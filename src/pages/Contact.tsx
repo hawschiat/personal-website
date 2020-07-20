@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from "react-ga";
 import { motion, Variants } from "framer-motion";
 import { FadeVariants } from "../PageAnimations";
 import AnimatedLink from "../components/AnimatedLink";
@@ -26,6 +27,8 @@ const contacts = [
 ];
 
 export default () => {
+  ReactGA.pageview("/contact");
+
   return (
     <div id="page">
       <motion.div

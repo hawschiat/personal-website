@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from "react-ga";
 import { motion, Variants } from "framer-motion";
 import Avatar from "../components/Avatar";
 import AnimatedLink from "../components/AnimatedLink";
@@ -18,6 +19,8 @@ const LinkParentVariants: Variants = {
 };
 
 export default () => {
+  ReactGA.pageview("/");
+
   return (
     <div id="home">
       <motion.div

@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from "react-ga";
 import { motion } from "framer-motion";
 import { FadeVariants, SlideVariants } from "../PageAnimations";
 import AnimatedLink from "../components/AnimatedLink";
@@ -9,6 +10,8 @@ import Ability from "../components/Ability";
 import AchievementContent from "../components/AchievementContent";
 
 export default () => {
+  ReactGA.pageview("/experience");
+
   return (
     <div id="page">
       <motion.div

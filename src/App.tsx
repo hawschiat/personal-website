@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { AnimatePresence } from "framer-motion";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import ReactGA from "react-ga";
 import "./styles/App.css";
 import Loader from "./components/TRexLoader";
 
@@ -11,6 +12,8 @@ const ProjectsPage = lazy(() => import("./pages/Projects"));
 const ContactPage = lazy(() => import("./pages/Contact"));
 
 export default () => {
+  ReactGA.initialize("UA-173042963-1");
+
   return (
     <Suspense fallback={Loader}>
       <Router>

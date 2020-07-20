@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from "react-ga";
 import { motion, Variants } from "framer-motion";
 import { FadeVariants, SlideVariants } from "../PageAnimations";
 import AnimatedLink from "../components/AnimatedLink";
@@ -22,6 +23,8 @@ const PictureVariants: Variants = {
 };
 
 export default () => {
+  ReactGA.pageview("/about");
+
   return (
     <div id="page">
       <motion.div

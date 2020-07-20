@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from "react-ga";
 import { motion } from "framer-motion";
 import { FadeVariants, SlideVariants } from "../PageAnimations";
 import AnimatedLink from "../components/AnimatedLink";
@@ -19,12 +20,19 @@ export default class ProjectPage extends React.Component {
   };
 
   chooseProject = (index: number) => {
+    if (index >= 0) {
+      ReactGA.pageview(`/projects/${index + 1}`);
+    } else {
+      ReactGA.pageview(`/projects`);
+    }
     this.setState({
       chosen: index,
     });
   };
 
   render() {
+    ReactGA.pageview("/projects");
+
     return (
       <div id="page">
         <motion.div
