@@ -84,10 +84,10 @@ export default () => {
           years. During that time, I had the chance to experiment with some
           interesting ideas. We eventually pitched our product to McGill
           University and, to our joy, obtained a year-long pilot. During the
-          pilot, we served some 12,000 students spanning about 10 courses. The
-          startup experience has taught me some valuable skills, including
-          entrepreneurship skills and hands-on experience on designing,
-          deploying and maintaining cloud-based applications.
+          pilot, we served some 4,000 students. The startup experience has
+          taught me some valuable skills, including entrepreneurship skills and
+          hands-on experience on designing, deploying and maintaining
+          cloud-based applications.
         </motion.p>
         <motion.p variants={SlideVariants}>
           Now, as I am graduating from university, I am ready to enter a new
