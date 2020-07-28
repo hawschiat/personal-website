@@ -81,24 +81,34 @@ export default () => {
             </p>
             <ul>
               <li>
-                Designed the platform from scratch using Vue.js as frontend, PHP
-                as backend.
+                Created the application front end from scratch using Vue.js, Vue
+                Router and Vuex, as well as back end using Yii2 Framework (PHP).
+                The platform uses both MySQL and DynamoDB as its database.
               </li>
               <li>
-                Implemented most frontend components following given Figma
-                designs.
+                Implemented a mobile-first, responsive user interface from
+                designs in Figma using SCSS and CSS3. Based on user survey, our
+                user experience obtained a net promoter score of +30, higher
+                than the industry average of +10.
               </li>
               <li>
-                Designed the databasess of the platform using relational
-                database (MySQL) and non-relation database (DynamoDB).
+                Migrated the application from traditional deployment on EC2 to
+                containerised application using Docker and AWS Fargate, cutting
+                down the cost of operation by over 50%.
               </li>
               <li>
-                Designed a containerized web application using Docker and Amazon
-                Elastic Container Service (ECS).
+                Created serverless applications involving API Gateway, DynamoDB
+                and Lambda, which cuts down the size of our monolith project,
+                making the project more manageable.
               </li>
               <li>
-                Orchestrated a continuous deployment pipeline using AWS
-                CodePipeline.
+                Orchestrated a Continuous Integration/Deployment (CI/CD)
+                pipeline with health check, giving our platform a zero-downtime
+                deployment.
+              </li>
+              <li>
+                Implemented the best security practices to comply with
+                regulations.
               </li>
               <li>
                 Written a Python-based DOCX parser, which involves parsing
