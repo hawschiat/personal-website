@@ -81,9 +81,9 @@ export default () => {
             </p>
             <ul>
               <li>
-                Created the application front end from scratch using Vue.js, Vue
-                Router and Vuex, as well as back end using Yii2 Framework (PHP).
-                The platform uses both MySQL and DynamoDB as its database.
+                Developed the application front end and back end from scratch
+                using using Vue.js and Yii2 Framework (PHP). The platform uses
+                both MySQL and DynamoDB as its database.
               </li>
               <li>
                 Mentored a junior front end developer to create new components
