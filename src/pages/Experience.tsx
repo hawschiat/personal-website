@@ -92,14 +92,14 @@ export default () => {
                 than the industry average of +10.
               </li>
               <li>
-                Migrated the application from traditional deployment on EC2 to
-                containerised application using Docker and AWS Fargate, cutting
-                down the cost of operation by over 50%.
+                Cut down over 50% on the cost of operation by migrating the
+                application from traditional deployment on EC2 to containerised
+                application using Docker and AWS Fargate.
               </li>
               <li>
-                Created serverless applications involving API Gateway, DynamoDB
-                and Lambda, which cuts down the size of our monolith project,
-                making the project more manageable.
+                Made projects more manageable by decoupling several components
+                into serverless microservices using AWS API Gateway, DynamoDB
+                and Lambda.
               </li>
               <li>
                 Orchestrated a Continuous Integration/Deployment (CI/CD)
