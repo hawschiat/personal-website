@@ -63,7 +63,7 @@ export default () => {
           delayChildren={{ enter: 0.7, exit: 0.6 }}
         >
           <ExperienceContent
-            title="Co-Founder and Lead Developer"
+            title="Co-Founder, Full-Stack Developer"
             period="December 2018 - September 2020"
             organization="Neverguess.ca"
             location="Montreal, QC"
@@ -86,10 +86,14 @@ export default () => {
                 The platform uses both MySQL and DynamoDB as its database.
               </li>
               <li>
-                Implemented a mobile-first, responsive user interface from
-                designs in Figma using SCSS and CSS3. Based on user survey, our
-                user experience obtained a net promoter score of +30, higher
-                than the industry average of +10.
+                Mentored a junior front end developer to create new components
+                for the platform.
+              </li>
+              <li>
+                Collaborated with the CEO to design a mobile-first user
+                experience. Based on our survey on 190 students, our user
+                experience obtained a net promoter score of +30, higher than the
+                industry average of +10.
               </li>
               <li>
                 Cut down over 50% on the cost of operation by migrating the
@@ -97,9 +101,8 @@ export default () => {
                 application using Docker and AWS Fargate.
               </li>
               <li>
-                Made projects more manageable by decoupling several components
-                into serverless microservices using AWS API Gateway, DynamoDB
-                and Lambda.
+                Broke down projects by decoupling components into serverless
+                microservices using AWS API Gateway, DynamoDB and Lambda.
               </li>
               <li>
                 Orchestrated a Continuous Integration/Deployment (CI/CD)
@@ -108,7 +111,8 @@ export default () => {
               </li>
               <li>
                 Implemented the best security practices to comply with
-                regulations.
+                regulations, getting a 100 score on SecurityScorecard. (The
+                industry average is 87)
               </li>
               <li>
                 Written a Python-based DOCX parser, which involves parsing
