@@ -86,6 +86,16 @@ export default () => {
                 both MySQL and DynamoDB as its database.
               </li>
               <li>
+                Designed the front end architecture using Vue Router (routing
+                library) and Vuex (state management library). Created the
+                application’s user interface using Material Design UI
+                components.
+              </li>
+              <li>
+                Configured server environment using Alpine Linux, Apache HTTP
+                Server, Nginx, Node.js and PHP. Deployed as a Docker container.
+              </li>
+              <li>
                 Mentored a junior front end developer to create new components
                 for the platform.
               </li>
