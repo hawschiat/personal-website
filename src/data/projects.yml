@@ -17,14 +17,13 @@
   imagePath: "/images/projects/flashpoint_banner.jpg"
   link: "https://github.com/COMP361/f2018-group10"
   description: >-
-    A medium-sized game development project that involves 5 people. We used [PyGame](https://pygame.org) and several other Python libraries to develop a video game based on FlashPoint, a board game. The video game is co-op and turn based, and the clients communicate with each other using peer-to-peer architecture.
-
+    Collaborated with 4 other people to develop a video game using [PyGame](https://pygame.org) and other Python libraries, based on a board game of the same name.
 
     Some of the things I did include:
 
-    - Built customizable UI components from the basic shapes provided by the library
+    - Authored customizable UI components using low-level drawing functions provided by pyGames, allowing my teammates to create user interfaces easily.
 
-    - Worked on the networking component of the game
+    - Implemented a client-server architecture for the game alongside a team-mate.
 
 - title: Bull & Bear Media Fund Package
   imagePath: "/images/projects/b&b_media_fund.png"
