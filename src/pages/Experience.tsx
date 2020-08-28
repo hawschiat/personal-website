@@ -92,32 +92,21 @@ export default () => {
                 components.
               </li>
               <li>
-                Configured server environment using Alpine Linux, Apache HTTP
-                Server, Nginx, Node.js and PHP. Deployed as a Docker container.
-              </li>
-              <li>
-                Mentored a junior front end developer to create new components
-                for the platform.
-              </li>
-              <li>
                 Collaborated with the CEO to design a mobile-first user
                 experience. Based on our survey on 190 students, our user
                 experience obtained a net promoter score of +30, higher than the
                 industry average of +10.
               </li>
               <li>
-                Cut down over 50% on the cost of operation by migrating the
-                application from traditional deployment on EC2 to containerised
-                application using Docker and AWS Fargate.
+                Integrated the platform with serverless services on AWS such as
+                API Gateway, DynamoDB, S3, SQS and Lambda, thereby minimizing
+                the management overhead and cutting the monthly cost of
+                operation by over 50%.
               </li>
               <li>
-                Broke down projects by decoupling components into serverless
-                microservices using AWS API Gateway, DynamoDB and Lambda.
-              </li>
-              <li>
-                Orchestrated a Continuous Integration/Deployment (CI/CD)
-                pipeline with health check, giving our platform a zero-downtime
-                deployment.
+                Overhauled the application deployment strategy by migrating from
+                traditional deployment to continuous delivery using Docker and
+                AWS CodePipeline.
               </li>
               <li>
                 Implemented the best security practices to comply with
@@ -125,18 +114,13 @@ export default () => {
                 industry average is 87)
               </li>
               <li>
-                Written a Python-based DOCX parser, which involves parsing
-                through XML files and extracting media files to object storage
-                on Amazon S3. The parser was essential to onboarding new
-                professors since it simplifies the migration from their own
-                question banks.
+                Facilitated discovery meetings to understand users’ requirements
+                and introduced solutions using the design-thinking methodology.
               </li>
               <li>
-                Designed an exam generator application using Python and Shell
-                scripts. The application is a Docker image that contains all the
-                necessary packages and scripts. When started up, the entry
-                script triggers the processes and exports a ZIP file containing
-                all versions of exam files in PDF format.
+                Converted business requirements into technical specifications
+                and provided an estimated timeframe to implement a specific
+                features.
               </li>
             </ul>
           </ExperienceContent>
@@ -187,7 +171,7 @@ export default () => {
           <span className="subtitle">Development Tools</span>
           <Ability name="Git" rated={4} outOf={5} />
           <Ability name="Docker" rated={3.5} outOf={5} />
-          <Ability name="Selenium WebDriver" rated={2.5} outOf={5} />
+          <Ability name="Github Actions" rated={3} outOf={5} />
         </ExperienceCategory>
       </motion.div>
     </div>
