@@ -64,7 +64,7 @@ export default () => {
         >
           <ExperienceContent
             title="Co-Founder, Full-Stack Developer"
-            period="December 2018 - September 2020"
+            period="May 2018 - July 2020"
             organization="Neverguess.ca"
             location="Montreal, QC"
           >
@@ -150,7 +150,6 @@ export default () => {
           <Ability name="Java" rated={4} outOf={5} />
           <Ability name="PHP" rated={3.5} outOf={5} />
           <Ability name="C#" rated={3} outOf={5} />
-          <Ability name="Clojure" rated={3} outOf={5} />
           <span className="subtitle">
             Web Development{" "}
             <span style={{ fontSize: "0.7em", marginLeft: "0.5em" }}>
@@ -166,8 +165,9 @@ export default () => {
           <Ability name="DynamoDB" rated={4.5} outOf={5} />
           <Ability name="MySQL" rated={4} outOf={5} />
           <Ability name="PostgreSQL" rated={3} outOf={5} />
-          <span className="subtitle">App Development</span>
-          <Ability name="Flutter" rated={3} outOf={5} />
+          <span className="subtitle">Testing Frameworks</span>
+          <Ability name="JUnit" rated={3.5} outOf={5} />
+          <Ability name="Jest" rated={3.5} outOf={5} />
           <span className="subtitle">Development Tools</span>
           <Ability name="Git" rated={4} outOf={5} />
           <Ability name="Docker" rated={3.5} outOf={5} />
