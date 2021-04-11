@@ -124,6 +124,12 @@ export default () => {
               </li>
             </ul>
           </ExperienceContent>
+          <ExperienceContent
+            title="Software Engineer"
+            period="Jan 2021 - Current"
+            organization="Breathe Life"
+            location="Montreal, QC"
+          />
         </ExperienceCategory>
         <ExperienceCategory
           name="Achievements"
@@ -144,11 +150,10 @@ export default () => {
         >
           <span className="subtitle">Programming Languages</span>
           <Ability name="JavaScript" rated={4.5} outOf={5} />
+          <Ability name="TypeScript" rated={4.5} outOf={5} />
           <Ability name="Python" rated={4.5} outOf={5} />
-          <Ability name="TypeScript" rated={4} outOf={5} />
-          <Ability name="Kotlin" rated={4} outOf={5} />
           <Ability name="Java" rated={4} outOf={5} />
-          <Ability name="PHP" rated={3.5} outOf={5} />
+          <Ability name="PHP" rated={3} outOf={5} />
           <Ability name="C#" rated={3} outOf={5} />
           <span className="subtitle">
             Web Development{" "}
@@ -158,19 +163,18 @@ export default () => {
           </span>
           <Ability name="HTML" rated={5} outOf={5} />
           <Ability name="CSS" rated={5} outOf={5} />
-          <Ability name="SCSS" rated={5} outOf={5} />
+          <Ability name="React" rated={4} outOf={5} />
           <Ability name="Vue.js" rated={4} outOf={5} />
-          <Ability name="React" rated={3.5} outOf={5} />
           <span className="subtitle">Database Systems</span>
           <Ability name="DynamoDB" rated={4.5} outOf={5} />
           <Ability name="MySQL" rated={4} outOf={5} />
-          <Ability name="PostgreSQL" rated={3} outOf={5} />
+          <Ability name="PostgreSQL" rated={4} outOf={5} />
           <span className="subtitle">Testing Frameworks</span>
+          <Ability name="Jest" rated={4} outOf={5} />
           <Ability name="JUnit" rated={3.5} outOf={5} />
-          <Ability name="Jest" rated={3.5} outOf={5} />
           <span className="subtitle">Development Tools</span>
           <Ability name="Git" rated={4} outOf={5} />
-          <Ability name="Docker" rated={3.5} outOf={5} />
+          <Ability name="Docker" rated={4} outOf={5} />
           <Ability name="Github Actions" rated={3} outOf={5} />
         </ExperienceCategory>
       </motion.div>

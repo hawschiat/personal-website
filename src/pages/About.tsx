@@ -90,11 +90,7 @@ export default () => {
           deploying and maintaining cloud-based applications.
         </motion.p>
         <motion.p variants={SlideVariants}>
-          Now, as I am graduating from university, I am ready to enter a new
-          chapter in my life. Currently, I am looking for full-time
-          opportunities in Full-Stack Development or similar fields. If you are
-          interested in having me, please feel free to contact me. I'd be very
-          glad to have a chat with you!
+          Currently, I am working as a Software Engineer at <a href="https://breathelife.com">Breathe Life</a>
         </motion.p>
         <motion.img
           id="profile-picture"
