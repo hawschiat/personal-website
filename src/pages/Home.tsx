@@ -54,7 +54,6 @@ export default () => {
         <div id="center-bottom">
           <a
             href="https://github.com/hawschiat/personal-website"
-            className="App-link"
           >
             Like this website? Check out my Github repo!
           </a>

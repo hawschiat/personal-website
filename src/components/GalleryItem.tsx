@@ -55,12 +55,11 @@ export default (props: GalleryProps) => {
           {props.title}
           {props.link ? (
             <a
-              className="App-link"
               href={props.link}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fas fa-external-link-alt"></i>
+              <i className="fas fa-external-link-alt"/>
             </a>
           ) : null}
         </div>

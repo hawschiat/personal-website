@@ -11,7 +11,7 @@ body {
   );
 }
 
-.App-link {
+a {
   color: #2648b8;
 }
 
@@ -68,7 +68,7 @@ body {
     background: #282c34;
     color: whitesmoke;
   }
-  .App-link {
+  a {
     color: #61dafb;
   }
 }

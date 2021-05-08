@@ -34,7 +34,6 @@ export default (props: ExperienceContentProps) => {
             <em>{props.period}</em>
           </span>
           <a
-            className="App-link"
             href={props.link}
             target="_blank"
             rel="noopener noreferrer"
