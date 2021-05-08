@@ -23,7 +23,7 @@ const SlideVariants: Variants = {
   },
 };
 
-export default (props: ExperienceCategoryProps) => {
+export default function ExperienceCategory(props: ExperienceCategoryProps) {
   let variant: Variants = {
     enter: {
       transition: {

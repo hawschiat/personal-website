@@ -11,7 +11,7 @@ const ExperiencePage = lazy(() => import("./pages/Experience"));
 const ProjectsPage = lazy(() => import("./pages/Projects"));
 const ContactPage = lazy(() => import("./pages/Contact"));
 
-export default () => {
+export default function App() {
   ReactGA.initialize("UA-173042963-1");
 
   return (

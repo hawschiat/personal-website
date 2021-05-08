@@ -9,7 +9,7 @@ import "../styles/Experience.css";
 import Ability from "../components/Ability";
 import AchievementContent from "../components/AchievementContent";
 
-export default () => {
+export default function Experience() {
   ReactGA.pageview("/experience");
 
   return (

@@ -31,7 +31,7 @@ const GalleryItemVariants: Variants = {
   },
 };
 
-export default (props: GalleryProps) => {
+export default function GalleryItem(props: GalleryProps) {
   let containerClass = "gallery-item-container";
   if (props.isActive) {
     containerClass += " active";

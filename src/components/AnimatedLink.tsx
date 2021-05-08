@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion, Variants } from "framer-motion";
 import "../styles/AnimatedLink.css";
 
-type AnimatedlinkProps = {
+type AnimatedLinkProps = {
   content: string;
   to?: string;
   large?: Boolean;
@@ -31,7 +31,7 @@ const LinkVariants: Variants = {
   },
 };
 
-const getClassName = (props: AnimatedlinkProps) => {
+const getClassName = (props: AnimatedLinkProps) => {
   let className = "animated-link";
   if (props.large) {
     className += " large";
@@ -39,7 +39,7 @@ const getClassName = (props: AnimatedlinkProps) => {
   return className;
 };
 
-export default (props: AnimatedlinkProps) => {
+export default function AnimatedLink(props: AnimatedLinkProps) {
   const { fontAwesomeIcon } = props;
 
   return (
@@ -50,11 +50,11 @@ export default (props: AnimatedlinkProps) => {
         whileTap={{ scale: 0.9 }}
       >
         {fontAwesomeIcon && fontAwesomeIcon.placement === "front" ? (
-          <i className={fontAwesomeIcon.iconClass}></i>
+          <i className={fontAwesomeIcon.iconClass}/>
         ) : null}
         <span>{props.content}</span>
         {fontAwesomeIcon && fontAwesomeIcon.placement === "end" ? (
-          <i className={fontAwesomeIcon.iconClass}></i>
+          <i className={fontAwesomeIcon.iconClass}/>
         ) : null}
       </motion.div>
     </Link>

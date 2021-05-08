@@ -101,7 +101,7 @@ export default class ProjectPage extends React.Component {
                       e.stopPropagation();
                       this.chooseProject(-1);
                     }}
-                  ></GalleryItem>
+                  />
                 ))
               : null}
           </div>

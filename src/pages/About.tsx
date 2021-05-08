@@ -22,7 +22,7 @@ const PictureVariants: Variants = {
   },
 };
 
-export default () => {
+export default function About() {
   ReactGA.pageview("/about");
 
   return (

@@ -18,7 +18,7 @@ const LinkParentVariants: Variants = {
   exit: { transition: { staggerChildren: 0.2 } },
 };
 
-export default () => {
+export default function Home() {
   ReactGA.pageview("/");
 
   return (

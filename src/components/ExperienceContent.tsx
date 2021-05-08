@@ -8,7 +8,7 @@ export type ExperienceContentProps = {
   children?: React.ReactNode;
 };
 
-export default (props: ExperienceContentProps) => {
+export default function ExperienceContent(props: ExperienceContentProps) {
   return (
     <div className="category-item">
       <header>

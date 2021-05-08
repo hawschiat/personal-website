@@ -29,7 +29,7 @@ const contacts = [
   },
 ];
 
-export default () => {
+export default function Contact() {
   ReactGA.pageview("/contact");
 
   return (
