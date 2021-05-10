@@ -48,7 +48,7 @@ export default function Home() {
           <motion.h3 variants={FadeVariants}>Hi, my name is </motion.h3>
           <motion.h2 variants={FadeVariants}>Seng Chiat (SC) Haw</motion.h2>
           <motion.h3 variants={FadeVariants}>
-            I am a Software Engineer
+            I am a Software Developer
           </motion.h3>
         </motion.div>
         <div id="center-bottom">

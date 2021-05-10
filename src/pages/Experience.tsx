@@ -125,7 +125,7 @@ export default function Experience() {
             </ul>
           </ExperienceContent>
           <ExperienceContent
-            title="Software Engineer"
+            title="Software Developer"
             period="Jan 2021 - Current"
             organization="Breathe Life"
             location="Montreal, QC"

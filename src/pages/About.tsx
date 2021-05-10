@@ -90,7 +90,7 @@ export default function About() {
           deploying and maintaining cloud-based applications.
         </motion.p>
         <motion.p variants={SlideVariants}>
-          Currently, I am working as a Software Engineer at <a href="https://breathelife.com">Breathe Life</a>
+          Currently, I am working as a Software Developer at <a href="https://breathelife.com">Breathe Life</a>
         </motion.p>
         <motion.img
           id="profile-picture"
