@@ -23,6 +23,7 @@
 
 .experience > .category-content > ul > li > div.category-item {
   padding: 1em 1.5em 1em 1.5em;
+  margin-bottom: 1em;
 }
 
 .experience > .category-content > ul > li > div.category-item > header {
