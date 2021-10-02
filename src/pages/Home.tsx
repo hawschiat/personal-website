@@ -52,15 +52,6 @@ export default function Home() {
           </motion.h3>
         </motion.div>
         <div id="center-bottom">
-          <div style={{
-            marginBottom: '1em'
-          }}>
-            <a
-              href="https://wren.co/join/hawschiat"
-            >
-              Join me in offsetting our carbon footprint on Wren
-            </a>
-          </div>
           <a
             href="https://github.com/hawschiat/personal-website"
           >
