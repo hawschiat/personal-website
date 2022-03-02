@@ -1,3 +1,24 @@
+- title: onespan-sign-node
+  link: "https://github.com/getbreathelife/onespan-sign-node"
+  description: >-
+    This is a work-in-progress NodeJS SDK for the [https://www.onespan.com/products/electronic-signature](OneSpan Sign Electronic Signature)
+    service.
+
+- title: Prettier Import Sorter
+  link: "https://www.npmjs.com/package/@breathelife/prettier-plugin-sort-imports"
+  description: >-
+    This is a fork of another import sorting plugin. The original plugin doesn't satisfy our use case within the company,
+    so I forked the repository and rewrote the sorting logic to fit our internal use case.
+    
+    This plugin is publicly available on npmjs.
+
+- title: Go Snake
+  imagePath: "/images/projects/go-snake.png"
+  link: "https://github.com/hawschiat/go-snake"
+  description: >-
+    A small challenge I had over a weekend while learning Go. This is a terminal-based game that prints out "graphics"
+    using only ASCII characters.
+
 - title: SAQ Inventory Scrapper
   imagePath: "/images/projects/saqs-screenshot.png"
   link: "https://github.com/hawschiat/saq-inventory-scraper"

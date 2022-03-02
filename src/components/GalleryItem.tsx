@@ -49,7 +49,7 @@ export default function GalleryItem(props: GalleryProps) {
           onClick={props.onCancel}
         />
         <div className="gallery-img-container">
-          <img src={require(`../assets${props.imagePath}`)} alt={props.title} />
+          <img src={require(`../assets${props.imagePath}`).default} alt={props.title} />
         </div>
         <div className="gallery-item-title">
           {props.title}

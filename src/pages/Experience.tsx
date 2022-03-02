@@ -1,13 +1,13 @@
 import React from "react";
 import ReactGA from "react-ga";
 import { motion } from "framer-motion";
+
 import { FadeVariants, SlideVariants } from "../PageAnimations";
 import AnimatedLink from "../components/AnimatedLink";
 import ExperienceCategory from "../components/ExperienceCategory";
 import ExperienceContent from "../components/ExperienceContent";
-import "../styles/Experience.css";
-import Ability from "../components/Ability";
 import AchievementContent from "../components/AchievementContent";
+import "../styles/Experience.css";
 
 export default function Experience() {
   ReactGA.pageview("/experience");
@@ -129,7 +129,30 @@ export default function Experience() {
             period="Jan 2021 - Current"
             organization="Breathe Life"
             location="Montreal, QC"
-          />
+          >
+            <ul>
+              <li>
+                Worked with developers and product managers to design, develop and maintain a SaaS platform that
+                empowers insurance companies or independent agents.
+              </li>
+              <li>
+                Developed in-house solutions with members of the DevSecOps team to power the company’s multi-tenant
+                infrastructure.
+              </li>
+              <li>
+                Collaborated with other developers in code reviews to uphold the coding standard and best practices.
+              </li>
+              <li>
+                Conceptualise and design software architectures for new features or improvement of existing architecture.
+              </li>
+              <li>
+                Monitored and troubleshooted application alerts using Sentry and Datadog.
+              </li>
+              <li>
+                Contributed to open-source initiatives within the company.
+              </li>
+            </ul>
+          </ExperienceContent>
         </ExperienceCategory>
         <ExperienceCategory
           name="Achievements"
@@ -142,40 +165,6 @@ export default function Experience() {
             imagePath="/images/badges/aws-certified-developer-associate.png"
             link="https://www.youracclaim.com/badges/5ecfedf0-e9fb-4b80-af63-873bf14e8514/public_url"
           />
-        </ExperienceCategory>
-        <ExperienceCategory
-          name="Abilities"
-          abilities
-          delayChildren={{ enter: 1.1, exit: 0.2 }}
-        >
-          <span className="subtitle">Programming Languages</span>
-          <Ability name="JavaScript" rated={4.5} outOf={5} />
-          <Ability name="TypeScript" rated={4.5} outOf={5} />
-          <Ability name="Python" rated={4.5} outOf={5} />
-          <Ability name="Java" rated={4} outOf={5} />
-          <Ability name="PHP" rated={3} outOf={5} />
-          <Ability name="C#" rated={3} outOf={5} />
-          <span className="subtitle">
-            Web Development{" "}
-            <span style={{ fontSize: "0.7em", marginLeft: "0.5em" }}>
-              (incl. JavaScript & TypeScript)
-            </span>
-          </span>
-          <Ability name="HTML" rated={5} outOf={5} />
-          <Ability name="CSS" rated={5} outOf={5} />
-          <Ability name="React" rated={4} outOf={5} />
-          <Ability name="Vue.js" rated={4} outOf={5} />
-          <span className="subtitle">Database Systems</span>
-          <Ability name="DynamoDB" rated={4.5} outOf={5} />
-          <Ability name="MySQL" rated={4} outOf={5} />
-          <Ability name="PostgreSQL" rated={4} outOf={5} />
-          <span className="subtitle">Testing Frameworks</span>
-          <Ability name="Jest" rated={4} outOf={5} />
-          <Ability name="JUnit" rated={3.5} outOf={5} />
-          <span className="subtitle">Development Tools</span>
-          <Ability name="Git" rated={4} outOf={5} />
-          <Ability name="Docker" rated={4} outOf={5} />
-          <Ability name="Github Actions" rated={3} outOf={5} />
         </ExperienceCategory>
       </motion.div>
     </div>
