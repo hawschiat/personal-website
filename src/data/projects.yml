@@ -1,7 +1,7 @@
 - title: onespan-sign-node
   link: "https://github.com/getbreathelife/onespan-sign-node"
   description: >-
-    This is a work-in-progress NodeJS SDK for the [https://www.onespan.com/products/electronic-signature](OneSpan Sign Electronic Signature)
+    This is a work-in-progress NodeJS SDK for the [OneSpan Sign Electronic Signature](https://www.onespan.com/products/electronic-signature)
     service.
 
 - title: Prettier Import Sorter

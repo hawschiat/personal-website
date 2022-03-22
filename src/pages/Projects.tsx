@@ -85,9 +85,9 @@ export default class ProjectPage extends React.Component {
           <motion.div id="content-title" variants={SlideVariants}>
             Projects
           </motion.div>
-          <p>
+          <motion.p>
             These are the projects I've done throughout my student / professional career that are publicly available.
-          </p>
+          </motion.p>
           <div id="project-gallery">
             {ProjectList
               ? ProjectList.map((project: ProjectData, i: number) => (
