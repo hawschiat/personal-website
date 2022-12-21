@@ -1,6 +1,6 @@
-import React, { lazy, Suspense } from "react";
+import React, {lazy, Suspense, useEffect} from "react";
 import { AnimatePresence } from "framer-motion";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import {HashRouter as Router, Routes, Route, useLocation} from "react-router-dom";
 import ReactGA from "react-ga";
 import "./styles/App.css";
 import Loader from "./components/TRexLoader";
@@ -12,25 +12,25 @@ const ProjectsPage = lazy(() => import("./pages/Projects"));
 const ContactPage = lazy(() => import("./pages/Contact"));
 
 export default function App() {
-  ReactGA.initialize("UA-173042963-1");
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.initialize("UA-173042963-1");
+  }, []);
 
   return (
     <Suspense fallback={<Loader />}>
       <Router>
         <div className="App">
-          <Route
-            render={({ location }) => (
-              <AnimatePresence exitBeforeEnter initial={false}>
-                <Switch location={location} key={location.pathname}>
-                  <Route exact path="/" component={HomePage} />
-                  <Route exact path="/about" component={AboutPage} />
-                  <Route exact path="/experience" component={ExperiencePage} />
-                  <Route exact path="/projects" component={ProjectsPage} />
-                  <Route exact path="/contact" component={ContactPage} />
-                </Switch>
-              </AnimatePresence>
-            )}
-          />
+          <AnimatePresence exitBeforeEnter initial={false}>
+            <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/experience" element={<ExperiencePage />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+            </Routes>
+          </AnimatePresence>
         </div>
       </Router>
     </Suspense>
