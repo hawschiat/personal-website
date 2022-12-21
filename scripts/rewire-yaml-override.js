@@ -3,11 +3,7 @@
 function rewireYAML(config) {
   const yamlLoader = {
     test: /\.ya?ml$/,
-    use: [
-      { loader: require.resolve('yaml-loader') },
-      { loader: require.resolve('yaml-loader') },
-      { loader: require.resolve('yaml-lint-loader') },
-    ],
+    use: 'yaml-loader',
   };
 
   // hack to insert yaml loader to react-script's default webpack config
