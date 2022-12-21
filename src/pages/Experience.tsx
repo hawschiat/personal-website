@@ -63,7 +63,44 @@ export default function Experience() {
           delayChildren={{ enter: 0.7, exit: 0.6 }}
         >
           <ExperienceContent
-            title="Co-Founder, Full-Stack Developer"
+            title="Full Stack Developer"
+            period="Nov 2022 - present"
+            organization="Firstup"
+            location="Remote"
+          >
+            {/* Nothing yet */}
+          </ExperienceContent>
+          <ExperienceContent
+            title="Software Developer"
+            period="Jan 2021 - Nov 2022"
+            organization="Breathe Life (Zinnia)"
+            location="Montreal, QC"
+          >
+            <ul>
+              <li>
+                Worked with developers and product managers to design, develop and maintain a SaaS platform that
+                empowers insurance companies or independent agents.
+              </li>
+              <li>
+                Developed in-house solutions with members of the DevSecOps team to power the company’s multi-tenant
+                infrastructure.
+              </li>
+              <li>
+                Collaborated with other developers in code reviews to uphold the coding standard and best practices.
+              </li>
+              <li>
+                Conceptualise and design software architectures for new features or improvement of existing architecture.
+              </li>
+              <li>
+                Monitored and troubleshooted application alerts using Sentry and Datadog.
+              </li>
+              <li>
+                Contributed to open-source initiatives within the company.
+              </li>
+            </ul>
+          </ExperienceContent>
+          <ExperienceContent
+            title="Co-Founder, Full Stack Developer"
             period="May 2018 - July 2020"
             organization="Neverguess.ca"
             location="Montreal, QC"
@@ -121,35 +158,6 @@ export default function Experience() {
                 Converted business requirements into technical specifications
                 and provided an estimated timeframe to implement a specific
                 features.
-              </li>
-            </ul>
-          </ExperienceContent>
-          <ExperienceContent
-            title="Software Developer"
-            period="Jan 2021 - Current"
-            organization="Breathe Life"
-            location="Montreal, QC"
-          >
-            <ul>
-              <li>
-                Worked with developers and product managers to design, develop and maintain a SaaS platform that
-                empowers insurance companies or independent agents.
-              </li>
-              <li>
-                Developed in-house solutions with members of the DevSecOps team to power the company’s multi-tenant
-                infrastructure.
-              </li>
-              <li>
-                Collaborated with other developers in code reviews to uphold the coding standard and best practices.
-              </li>
-              <li>
-                Conceptualise and design software architectures for new features or improvement of existing architecture.
-              </li>
-              <li>
-                Monitored and troubleshooted application alerts using Sentry and Datadog.
-              </li>
-              <li>
-                Contributed to open-source initiatives within the company.
               </li>
             </ul>
           </ExperienceContent>

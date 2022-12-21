@@ -15,7 +15,7 @@ export default function AchievementContent(props: ExperienceContentProps) {
       {props.imagePath ? (
         <div className="badge-container">
           <img
-            src={require(`../assets${props.imagePath}`).default}
+            src={require(`../assets${props.imagePath}`)}
             alt={props.title}
           />
         </div>
