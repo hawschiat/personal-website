@@ -22,7 +22,7 @@ export default function App() {
     <Suspense fallback={<Loader />}>
       <Router>
         <div className="App">
-          <AnimatePresence exitBeforeEnter initial={false}>
+          <AnimatePresence mode="wait" initial={false}>
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />

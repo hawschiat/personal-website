@@ -80,7 +80,7 @@ export default function About() {
         <motion.p variants={SlideVariants}>
           After arriving in Canada for my undergraduate studies, I had the
           priviledge to work for a few organizations on campus and eventually
-          co-founded an Edtech startup, where I worked at for the past few
+          co-founded Neverguess, an Edtech startup, where I worked at for the past few
           years. During that time, I had the chance to experiment with some
           interesting ideas. We eventually pitched our product to McGill
           University and, to our joy, obtained a year-long pilot. During the
@@ -90,7 +90,11 @@ export default function About() {
           deploying and maintaining cloud-based applications.
         </motion.p>
         <motion.p variants={SlideVariants}>
-          Currently, I am working as a Software Developer at <a href="https://breathelife.com">Breathe Life</a>
+          After Neverguess, I worked at Breathe Life (now Zinnia) for two years, where I
+          gained valuable experience in product development.
+        </motion.p>
+        <motion.p variants={SlideVariants}>
+          Currently, I am working as a Software Developer at <a href="https://firstup.io">Firstup</a>
         </motion.p>
         <motion.img
           id="profile-picture"
