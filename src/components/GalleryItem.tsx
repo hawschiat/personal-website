@@ -63,7 +63,7 @@ export default function GalleryItem(props: GalleryProps) {
             </a>
           ) : null}
         </div>
-        <AnimatePresence exitBeforeEnter initial={false}>
+        <AnimatePresence mode="wait" initial={false}>
           <motion.div
             className="gallery-item-description"
             initial="initial"
@@ -71,7 +71,9 @@ export default function GalleryItem(props: GalleryProps) {
             exit="exit"
             variants={SlideVariants}
           >
-            <ReactMarkdown source={props.description} />
+            <ReactMarkdown>
+              {props.description}
+            </ReactMarkdown>
           </motion.div>
         </AnimatePresence>
       </div>

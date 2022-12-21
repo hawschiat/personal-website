@@ -12,8 +12,6 @@ const ProjectsPage = lazy(() => import("./pages/Projects"));
 const ContactPage = lazy(() => import("./pages/Contact"));
 
 export default function App() {
-  const location = useLocation();
-
   useEffect(() => {
     ReactGA.initialize("UA-173042963-1");
   }, []);
@@ -22,17 +20,23 @@ export default function App() {
     <Suspense fallback={<Loader />}>
       <Router>
         <div className="App">
-          <AnimatePresence mode="wait" initial={false}>
-            <Routes location={location} key={location.pathname}>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/experience" element={<ExperiencePage />} />
-              <Route path="/projects" element={<ProjectsPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-            </Routes>
-          </AnimatePresence>
+          <AppContent />
         </div>
       </Router>
     </Suspense>
   );
 };
+
+function AppContent() {
+  const location = useLocation();
+
+  return <AnimatePresence mode="wait" initial={false}>
+    <Routes location={location} key={location.pathname}>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/experience" element={<ExperiencePage />} />
+      <Route path="/projects" element={<ProjectsPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+    </Routes>
+  </AnimatePresence>
+}
