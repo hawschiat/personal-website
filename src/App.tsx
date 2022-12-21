@@ -15,7 +15,7 @@ export default function App() {
   ReactGA.initialize("UA-173042963-1");
 
   return (
-    <Suspense fallback={Loader}>
+    <Suspense fallback={<Loader />}>
       <Router>
         <div className="App">
           <Route
