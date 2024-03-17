@@ -1,20 +1,18 @@
-#home {
+.Home {
   text-align: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+
+  & h2,h3,h4 {
+    margin: 0;
+    line-height: 2em;
+  }
 }
 
-#home h2,
-#home h3,
-#home h4 {
-  margin: 0;
-  line-height: 2em;
-}
-
-#home #center {
+.HomeCenter {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,60 +21,58 @@
   width: 100%;
   margin-bottom: 2em;
 }
-#home #center > #center-top {
+
+.HomeCenter__Top {
   font-size: calc(10px + 2vmin);
   order: 2;
 }
-#home #center > #center-bottom {
+
+.HomeCenter__Bottom {
   order: 1;
   margin-top: 25px;
   margin-bottom: 10vh;
 }
-#home #left {
+
+.HomeLeft {
   order: 2;
+
+  & div.animated-link::after {
+    transform-origin: left;
+  }
 }
-#home #right {
+
+.HomeRight {
   order: 3;
-}
 
-#home #left div.animated-link::after {
-  transform-origin: left;
-}
-#home #right div.animated-link::after {
-  transform-origin: right;
-}
-
-#home #avatar {
-  margin-bottom: 1em;
-}
-#avatar #Eyes\/Default #Eye {
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  & div.animated-link::after {
+    transform-origin: right;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-  #home {
+  .Home {
     min-height: 100vh;
     flex-wrap: nowrap;
     justify-content: center;
   }
 
-  #home #center {
+  .HomeCenter {
     order: 2;
     width: unset;
     margin-bottom: unset;
   }
-  #home #center > #center-top {
+
+  .HomeCenter__Top {
     order: 1;
     margin-bottom: 2em;
   }
-  #home #center > #center-bottom {
+
+  .HomeCenter__Bottom {
     order: 2;
     margin-bottom: unset;
   }
 
-  #home #left {
+  .HomeLeft {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -86,7 +82,8 @@
     padding: 1em;
     order: 1;
   }
-  #home #right {
+
+  .HomeRight {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -99,7 +96,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  #home #center > #center-bottom > a.social-btns {
+  .HomeCenter__Bottom > a.social-btns {
     color: whitesmoke;
   }
 }

@@ -20,6 +20,7 @@
     "jsx": "react",
     "noFallthroughCasesInSwitch": true,
     "types": [
+      "node",
       "vite/client",
       "@modyfi/vite-plugin-yaml/modules"
     ]

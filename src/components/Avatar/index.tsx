@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
+import styles from "./styles.module.css";
 
 const AvatarVariants: Variants = {
   initial: { y: "-50%", opacity: 0 },
@@ -197,7 +198,7 @@ export default class Avatar extends React.Component {
     return (
       <motion.svg
         variants={AvatarVariants}
-        id="avatar"
+        className={styles.Avatar}
         width="264px"
         height="280px"
         viewBox="0 0 264 280"

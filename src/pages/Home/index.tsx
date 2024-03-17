@@ -1,9 +1,9 @@
 import React from "react";
 import ReactGA from "react-ga4";
 import { motion, Variants } from "framer-motion";
-import Avatar from "../components/Avatar";
-import AnimatedLink from "../components/AnimatedLink";
-import "../styles/Home.css";
+import Avatar from "../../components/Avatar";
+import AnimatedLink from "../../components/AnimatedLink";
+import styles from "./styles.module.css";
 
 const FadeVariants: Variants = {
   initial: { scale: 0.8, opacity: 0 },
@@ -22,9 +22,9 @@ export default function Home() {
   ReactGA.send({ hitType: "pageview", page: "/", title: "Home" });
 
   return (
-    <div id="home">
+    <div className={styles.Home}>
       <motion.div
-        id="left"
+        className={styles.HomeLeft}
         initial="initial"
         animate="enter"
         exit="exit"
@@ -33,9 +33,9 @@ export default function Home() {
         <AnimatedLink large content="About Me" to="/about" />
         <AnimatedLink large content="Projects" to="/projects" />
       </motion.div>
-      <div id="center">
+      <div className={styles.HomeCenter}>
         <motion.div
-          id="center-top"
+          className={styles.HomeCenter__Top}
           initial="initial"
           animate="enter"
           exit="exit"
@@ -51,7 +51,7 @@ export default function Home() {
             I am a Software Developer
           </motion.h3>
         </motion.div>
-        <div id="center-bottom">
+        <div className={styles.HomeCenter__Bottom}>
           <a
             href="https://github.com/hawschiat/personal-website"
           >
@@ -60,7 +60,7 @@ export default function Home() {
         </div>
       </div>
       <motion.div
-        id="right"
+        className={styles.HomeRight}
         initial="initial"
         animate="enter"
         exit="exit"
