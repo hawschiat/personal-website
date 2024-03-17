@@ -1,5 +1,5 @@
 import React from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { motion, Variants } from "framer-motion";
 import { FadeVariants, SlideVariants } from "../PageAnimations";
 import AnimatedLink from "../components/AnimatedLink";
@@ -23,7 +23,7 @@ const PictureVariants: Variants = {
 };
 
 export default function About() {
-  ReactGA.pageview("/about");
+  ReactGA.send({ hitType: "pageview", page: "/about", title: "About" });
 
   return (
     <div id="page">

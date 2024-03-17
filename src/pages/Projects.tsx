@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { motion } from "framer-motion";
 
 import { FadeVariants, SlideVariants } from "../PageAnimations";
@@ -30,7 +30,7 @@ export default function ProjectPage() {
   };
 
   useEffect(() => {
-    ReactGA.pageview("/projects");
+    ReactGA.send({ hitType: "pageview", page: "/projects", title: "Projects" });
   }, []);
 
   return (

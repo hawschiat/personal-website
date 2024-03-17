@@ -1,5 +1,5 @@
 import React from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { motion } from "framer-motion";
 
 import { FadeVariants, SlideVariants } from "../PageAnimations";
@@ -10,7 +10,7 @@ import AchievementContent from "../components/AchievementContent";
 import "../styles/Experience.css";
 
 export default function Experience() {
-  ReactGA.pageview("/experience");
+  ReactGA.send({ hitType: "pageview", page: "/experience", title: "Experience" });
 
   return (
     <div id="page">

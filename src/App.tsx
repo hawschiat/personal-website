@@ -1,7 +1,7 @@
 import React, {lazy, Suspense, useEffect} from "react";
 import { AnimatePresence } from "framer-motion";
 import {HashRouter as Router, Routes, Route, useLocation} from "react-router-dom";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import "./styles/App.css";
 import Loader from "./components/TRexLoader";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import ReactGA, { OutboundLink } from "react-ga";
+import ReactGA from "react-ga4";
 import { motion, Variants } from "framer-motion";
 import { FadeVariants } from "../PageAnimations";
 import AnimatedLink from "../components/AnimatedLink";
@@ -30,7 +30,7 @@ const contacts = [
 ];
 
 export default function Contact() {
-  ReactGA.pageview("/contact");
+  ReactGA.send({ hitType: "pageview", page: "/contact", title: "Contact" });
 
   return (
     <div id="page">
@@ -87,9 +87,9 @@ export default function Contact() {
             whileHover={{ scale: 1.3 }}
             whileTap={{ scale: 0.9 }}
           >
-            <OutboundLink eventLabel={contact.label} to={contact.link}>
+            <a href={contact.link}>
               <i className={contact.icon}></i>
-            </OutboundLink>
+            </a>
           </motion.div>
         ))}
       </motion.div>
