@@ -1,29 +1,28 @@
-import React from "react";
-import ReactGA from "react-ga4";
-import { motion, Variants } from "framer-motion";
-import { FadeVariants, SlideVariants } from "../PageAnimations";
-import AnimatedLink from "../components/AnimatedLink";
-import ProfilePic from "../assets/mypic.jpg";
-import "../styles/About.css";
+import ReactGA from 'react-ga4'
+import { motion, Variants } from 'framer-motion'
+import { FadeVariants, SlideVariants } from '../PageAnimations'
+import AnimatedLink from '../components/AnimatedLink'
+import ProfilePic from '../assets/mypic.jpg'
+import '../styles/About.css'
 
 const PictureVariants: Variants = {
-  initial: { x: "30%", rotate: 2, opacity: 0 },
+  initial: { x: '30%', rotate: 2, opacity: 0 },
   enter: {
-    x: "0%",
+    x: '0%',
     rotate: 2,
     opacity: 1,
-    transition: { ease: "circOut", duration: 0.6 },
+    transition: { ease: 'circOut', duration: 0.6 },
   },
   exit: {
-    x: "-50%",
+    x: '-50%',
     rotate: 2,
     opacity: 0,
-    transition: { ease: "circIn", duration: 0.6 },
+    transition: { ease: 'circIn', duration: 0.6 },
   },
-};
+}
 
 export default function About() {
-  ReactGA.send({ hitType: "pageview", page: "/about", title: "About" });
+  ReactGA.send({ hitType: 'pageview', page: '/about', title: 'About' })
 
   return (
     <div id="page">
@@ -36,8 +35,8 @@ export default function About() {
       >
         <AnimatedLink
           fontAwesomeIcon={{
-            iconClass: "fas fa-arrow-left",
-            placement: "front",
+            iconClass: 'fas fa-arrow-left',
+            placement: 'front',
           }}
           content="Home"
           to="/"
@@ -52,8 +51,8 @@ export default function About() {
       >
         <AnimatedLink
           fontAwesomeIcon={{
-            iconClass: "fas fa-arrow-right",
-            placement: "end",
+            iconClass: 'fas fa-arrow-right',
+            placement: 'end',
           }}
           content="Experience"
           to="/experience"
@@ -65,7 +64,12 @@ export default function About() {
         animate="enter"
         exit="exit"
         variants={{
-          enter: { transition: { delayChildren: 0.5, staggerChildren: 0.1 } },
+          enter: {
+            transition: {
+              delayChildren: 0.5,
+              staggerChildren: 0.1,
+            },
+          },
           exit: { transition: { staggerChildren: 0.2 } },
         }}
       >
@@ -80,9 +84,9 @@ export default function About() {
         <motion.p variants={SlideVariants}>
           After arriving in Canada for my undergraduate studies, I had the
           priviledge to work for a few organizations on campus and eventually
-          co-founded Neverguess, an Edtech startup, where I worked at for the past few
-          years. During that time, I had the chance to experiment with some
-          interesting ideas. We eventually pitched our product to McGill
+          co-founded Neverguess, an Edtech startup, where I worked at for the
+          past few years. During that time, I had the chance to experiment with
+          some interesting ideas. We eventually pitched our product to McGill
           University and, to our joy, obtained a year-long pilot. During the
           pilot, we served some 4,000 students and professors. The startup
           experience has taught me some valuable skills, including
@@ -90,11 +94,12 @@ export default function About() {
           deploying and maintaining cloud-based applications.
         </motion.p>
         <motion.p variants={SlideVariants}>
-          After Neverguess, I worked at Breathe Life (now Zinnia) for two years, where I
-          gained valuable experience in product development.
+          After Neverguess, I worked at Breathe Life (now Zinnia) for two years,
+          where I gained valuable experience in product development.
         </motion.p>
         <motion.p variants={SlideVariants}>
-          Currently, I am working as a Software Developer at <a href="https://firstup.io">Firstup</a>
+          Currently, I am working as a Software Developer at{' '}
+          <a href="https://firstup.io">Firstup</a>
         </motion.p>
         <motion.img
           id="profile-picture"
@@ -104,5 +109,5 @@ export default function About() {
         />
       </motion.div>
     </div>
-  );
-};
+  )
+}
